@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- html 5버전 -->
+<html>
+<!--  -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML기본문법</title>
+    <!-- 웹브라우저 창 이름 -->
+    <style>
+        /* css comment*/ 
+        *{
+            color: rgb(0, 255, 132);
+        }
+        /* element selector */ 
+        h1, p{
+            border:1px solid;
+        }
+        /* id selector */
+        #div2{
+            background-color: rgb(170, 255, 227);
+        }
+        /* class selector:  */
+        .dotted1 {
+            border:1px dotted; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 글자크기조정 -->
+    <!-- p태그 내부에는 h태그, ol, ul태그를 줄 수 없다! -->
+    <h1 style="width:600px; height: 200px; margin: 10px 20px 30px 40px ; padding:100px 10px">제목1 사용자의 눈이 불편한 페이지</h1>
+    <h3>제목3</h3>
+    <h6>제목6</h6>
+
+    <p style="width: 300px; background-color:greenyellow;">
+        눈이 아픈 색깔
+    </p> 
+
+     <!-- 목록태그 ol 1.2.3 / ul *** -->
+     <ol style="color:cyan;border: 1px solid; list-style-type: none;">
+        <li>JAVA</li>
+        <li>SQL</li>
+        <li>HTML</li>
+    </ol>
+
+    <ul style="color: aquamarine; border: 2px solid; list-style-type: square;">
+        <li>JAVA</li>
+        <li>SQL</li>
+        <li>HTML</li>
+    </ul>
+
+    <p style="width: 400px; border: 1px solid; background-color: lawngreen;">
+        눈이 아픈 색깔 ver2 
+    </p>
+
+    <!-- 표 / tr:행 td:열-->
+    <!-- tbody생략하면 엔진에 의해 자동만들어진다 -->
+    <!-- th: 각 셀의 제목 -->
+    <table style="border: 2px solid; border-collapse:collapse; width:280px; height:150px;"> 
+        <thead>
+            <tr>
+                <th class = "dotted1">오른쪽이아닌왼쪽</th>
+                <th class = "dotted1">왼쪽이아닌오른쪽</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 100px; height: 100px;">A</td>
+                <td class="dotted1">B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="border: 10px solid;">foot1</td>
+                <td style="border: 10px solid;">foot2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p style="border: 5px; background-color: mediumspringgreen;">
+        <!-- 이미지태그는 닫는태그 따로 없다 
+        src: 화면에 보여줄 이미지에 대한 리소스를 정확히 경로로 입력 
+        alt: 이미지에 대한 설명 -->
+        <img src="../images/a.jpg"
+        <img src="D:\263\myFrontWEB\images\a.jpg" 
+        alt="엘리멘탈" 
+        style="width:300px; margin: 10px; color: palegreen;"> 
+        <img src="D:\263\myFrontWEB\images\a.jpg" alt="엘리멘탈" style="height:300px">
+        <img src="..\images\a.jpg" alt="엘리멘탈 상대경로" width="300px">  
+        <img src="https://imgnews.pstatic.net/image/082/2023/06/26/0001219005_001_20230626114501272.jpg?type=w647">
+        <img src="../xx.jpg" alt="없는이미지"> 
+        <!-- 경로를 줄때는 절대경로보다는 상대경로를 사용! 절대 경로를 줄때는 http:// 사용 , :d , :c 이런 경로 사용하지 말기! -->
+        <!-- 없는 이미지 -->
+    </p>
+    <p>
+        html요소는 block요소와 inline요소로 나뉜다
+        block요소는 1줄을 모두 사용하는 구조(크기지정가능, 상하마진가능)
+        inline요소는 1줄에 다음요소와 이어지는 구조(크기지정불가, 상하마진불가)
+        inline-block요소는 1줄에 다음요소와 이어지는 구조 
+        <hr>
+        block요소의 종류로는 h1~h6, p, ul, ol, li, table, tr, div  
+        lnline요소의 종류로는 th, td, span, br
+        inline-block요소의 종류로는 img, th/td(마진영역이 없음)
+    </p>
+
+        <div style="margin:10px">DIV</div>
+        <div style="border:3px solid; width:100px; margin:20px">DIV2</div>
+        <span style="border:3px solid; width:100px; margin:30px">SPAN1</span>
+        <span style="margin: 40px;">SPAN2</span>
+        <div>DIV3</div>
+        <span>SPAN3</span>
+
+        <div>
+            <a href="https://yerimee220.tistory.com/" style="background-color: rgb(235, 162, 215);">예림블로그</a>
+            <a href="http://www.google.com">구글</a> 
+            <a href="http://www.naver.com">네이버</a>
+            <a href="http://localhost:8888">local tomcat</a>
+            <a href="http://192.168.0.06:8888">06 tomcat</a>
+            <a href="#">링크없음</a>
+            <a href="#div3">div3</a>
+            <a href="./form.html">form.html</a>
+        </div>
+
+        <div id="div1" style="border: 1px solid; height: 300px; ">
+            first division 
+        </div>
+
+        <div id="div2" style="border: 1px solid; height: 300px; ">
+            나만 색깔이 있다 하하
+        </div>
+
+        <div id="div3" style="border: 1px solid; height: 300px; ">
+            third division 
+        </div>
+
+</body>
+
+</html>

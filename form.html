@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>입력양식</title>
+    </head>
+    <body>
+        <div>
+            <form method ="get" action="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8"">
+                <input name="query">
+
+                <button>전송1</button>
+
+            </form>
+        </div>
+              <form action="http://localhost:8888/form" 
+                    id ="f1"
+                    autocomplete="off"
+                >
+                <label>
+                       <span>아이디:</span>
+                       <input type="text" 
+                       name ="t"  
+                       maxlength="7"
+                       placeholder="아이디를 입력하세요"
+                       style="width:100px;"
+                       required="required">
+
+                    </label>
+                    <br>
+                <input type="password" 
+                       name="p" 
+                       VALUE = "pdefault"
+                       disabled="true">
+                        <br> 
+                <label><span>numbrr</span>
+                             <input type ="number"  
+                             name="n"  VALUE ="1" 
+                             min ="1" max="10" 
+                             step="2"> 
+                 </label>   
+                 <br>
+                 <label for="efor">   
+                    email :
+                </label>            
+                <input type ="email"   
+                       name="e" 
+                       VALUE ="a@b.com"
+                       id="efor">
+                       <br>
+
+                date   :<input type ="date"    name="d"  VALUE = "1994-01-17" pattern="\d{4}-\d{2}-\d{2}"><br>
+                range  :<input type ="range"   name="ra" VALUE ="5" main="1" max="10"><br>
+                search :<input type ="search"  name ="se"> <br>
+
+                <fieldset>
+                    <legend>언어를 선택하세요</legend>
+                    <input type="checkbox" checked name="c" VALUE = "J">JAVA &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="c" VALUE = "S">SQL &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="c" VALUE = "H">HTML<br>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>버튼을 선택하세요</legend>
+                    <input type="radio"    name="r" VALUE = "r1"> ONE &nbsp;&nbsp;
+                    <input type="radio"    name="rr" VALUE = "r2"> TWO &nbsp;&nbsp;
+                    <input type="radio"    name="rrrr" VALUE = "r3"> THREE <br>
+                </fieldset>
+
+                <input type="hidden"   name ="h"VALUE = "hdefault"> <!--히든은 전달하지만 보이진 않음-->
+
+                <select name = "s">
+                    <option VALUE = "s1"          >ONE</option>
+                    <option VALUE = "s2"  selected>TWO</option>
+                    <option VALUE = "s3"          >THREE</option>
+                </select>
+                <textarea name="ta" 
+                          rows="5" 
+                          cols="50" 
+                          style="resize : none; background-color: rgb(178, 199, 237);" 
+                          >여러줄입력란</textarea>
+                <br>
+
+                <fieldset>
+                <button>전송2</button>
+                <input type="submit" value="SUBMIT버튼"> 
+
+                <button type="button">일반버튼1</button>
+                <input  type="button" value="일반버튼2"> 
+
+                <button type="reset">RESET1</button>
+                <input  type="reset" value="RESET2">
+                </fieldset>
+              </form>
+              <button>일반버튼3</button>
+              <input name="t1" form="f1" placeholder="아이디2를 입력하세요">
+                        
+                <div>
+                    <form action="http://localhost:8888/form" 
+                            method="post"
+                    >
+                            <input name="t">
+                            <button>POST방식으로 전송</button>
+                            <!-- get . post의 차이점 정리&공부하기 -->
+                            <!-- 사용자의 입력값이 보이지 않음 = 보안상 좋음 
+                            get : 조회, 검색  (서버에 자료를 받고 싶을 때) body content를 사용하지 않는다. 
+                            post : (서버에 자료를 보내고 싶을 때) body content를 사용한다. -->
+                    </form>
+                </div>
+            </body>
+</html>

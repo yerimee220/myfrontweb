@@ -6,13 +6,14 @@ div {
 	border:1px solid;
     }
 h3, h1 {
-	visivility: hidden; 
   display: none;
   background-color: pink;
   padding: 20px;
   color: white;
 }
-h2 {color: hotpink;}
+h2 {color: white;}
+
+
 
 div:hover h3 {
   /*display: block;*/
@@ -24,9 +25,11 @@ div:hover h1 {
 }
 </style>
 </head>
-<body>
+<body style="background-color: lightblue;" >
+ 
+    
 <h2> 마우스를 움직여보세요</h2>
-<div>여기YO!
+<div style="color: azure;"><i>여기YO!</i>
   <h3>대머리 깎아라</h3>
   <h1>뭘봐요</h1> 
 </div>
