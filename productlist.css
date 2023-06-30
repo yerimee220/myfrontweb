@@ -1,0 +1,41 @@
+section{
+    background-color: rgba(185, 224, 232, 0.181);
+}
+
+body{
+    font-family: "Nanum Pen Script";
+}
+
+div.productlist{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+div.productlist>div.product{
+    width: 20%;
+    display: inline-block;
+}
+
+div.productlist>div.product>ul{
+    width: 100px;
+    list-style-type:none;
+    padding-left: 0;
+    /* 그 요소안에서 보더와 컨텐트 사이의 간격 padding */
+}
+
+div.productlist>div.product>ul>li{
+    width: 100%;
+    margin: 5px;
+    /* 다른요소와의 관계 margin */
+    text-align: center;
+}
+
+
+
+div.productlist>div.product>ul>li>img{
+    width: 100%;
+}
+
+div.productlist>div.product>ul>li>span{
+    display: block;
+}

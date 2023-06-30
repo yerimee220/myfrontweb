@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+/* name속성값이 id인 요소 */
+form.login>input[name=id],form.login>input[name=pwd] {
+    width: 100%;
+}
+
+form.login>span{
+    background-color: rgb(219, 253, 255);
+}
+
+@media screen and(max-width:640px){
+    form.login>span{
+        display:block;   
+        background-color: black;
+        color: red;
+    }
+}

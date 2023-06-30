@@ -1,8 +1,132 @@
-
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nanum Pen Script";
+}
 header {
-    border:1px solid; background-color: #f6f5ef;
+    border: 5px solid;
+    border-color: #bfedf7; 
+    background-color: white;
+    /* white   */
+    height: 69px;
+    left: 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+header>h1{ 
+    height: 45px;
+    /* left: 10px;
+    position: absolute;
+    top: 13px; */
+    float: left;
+    width: 45px;
+    margin: 10px;
+}
+
+header>h1>a.logo{
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -20000px;
+    width: 100%;
+    margin-bottom: 100%;
+   
+}
+header>nav{
+    float: right;
+    width: 70%;
+}
+
+header>nav>ul{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+header>nav>ul>li{
+    display: inline-block;
+    /* width: 120px; */
+    width: 15%;
+    padding: 5px;
+    color: #787676;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header>nav>ul>li :hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+}
+
+section{
+    /* background-color: #bfedf7; */
+    height: 500px;
+    width:100%;
+    /* position: relative;
+    left: 0;
+    top:80px; */
+    margin-top: 70px;
+}
+
+section>div{
+    color: #787676;
+    /* background-color: #feffdb; */
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+section>div>article{
+    border: 5px solid;
+    border-color: aliceblue;
+}
+
+section>div>article:first-child{
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    width: 100%;
+}
+
+section>div>article:last-child{
+    /* background-color: rgb(255, 255, 208); */
+    height: 30%;
+    width: 100%;
+}
+    
+section>aside{
+    width: 15%;
+    height: 100%;
+    float: right;
+    color:#787676;
+    background-color:  #acd7e1;
 }
 
 footer{
-    background-color: #282828; color:#fff;
+    background-color: #bfedf7; color:#787676;
+    border:5px solid;
+    border-color: white;
+    text-align: center;
+}
+
+footer>ul{
+    list-style-type: none;
+    padding-left:0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+footer>span{
+    display: inline-block;
+    margin-top: 40px;
+    width: 80%;
 }
