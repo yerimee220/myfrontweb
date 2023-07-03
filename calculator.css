@@ -1,12 +1,18 @@
 fieldset{
-    width: 200px;
+    width: 210px;
 }
-
+input#result{
+    width: 230px;
+}
 button{
+    width: 75px;
     background-color: black;
     color: pink;
 }
-body :hover{
+
+button:hover{
     background-color: pink;
     color: black;
 }
+/* body :hover{
+} */
