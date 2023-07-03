@@ -1,0 +1,10 @@
+
+
+body>button{
+    background-color: black;
+    color: pink;
+}
+body :hover{
+    background-color: pink;
+    color: black;
+}
