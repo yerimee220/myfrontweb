@@ -1,6 +1,8 @@
+fieldset{
+    width: 200px;
+}
 
-
-body>button{
+button{
     background-color: black;
     color: pink;
 }

@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="ko">
+  <head>
     <link rel="stylesheet" href="../css/calculator.css">
-</head>
-<body>
-    <input type="text" style="width: 75px;">
-    <br>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button><br>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button> <br>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button> <br>
-    <button>0</button> <br> 
-    
-    <button>+</button>
-    <button>-</button>
-    <button>=</button>
-</body>
+    <script src="../js/eventjs.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <fieldset class="all"><input type="checkbox" /> <span>All</span></fieldset>
+      <fieldset class="each">
+        <input type="checkbox" /><span>ONE</span>
+        <!---->
+        <input type="checkbox" /><span>TWO</span>
+        <!---->
+        <input type="checkbox" /><span>THREE</span>
+      </fieldset>
+
+      <input id="result" type="text" /> <br />
+      <button>7</button>
+      <button>8</button>
+      <button>9</button> <br />
+      <button>4</button>
+      <button>5</button>
+      <button>6</button> <br />
+      <button>1</button>
+      <button>2</button>
+      <button>3</button> <br />
+      <button>0</button> <br />
+      <button>+</button>
+      <button>-</button>
+      <button>=</button>
+    </div>
+
+    <script>
+      let e = document.getElementById("test");
+      console.log(e.value);
+    </script>
+  </body>
 </html>
