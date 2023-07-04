@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="../css/calculator.css">
     <script src="../js/eventjs.js"></script>
+    <link rel="stylesheet" href="../scc/eventjs.css"> 
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -15,6 +16,7 @@
         <!---->
         <input type="checkbox" /><span>THREE</span>
       </fieldset>
+
 
       <input id="result" type="text" /> <br />
       <button>7</button>
@@ -32,9 +34,38 @@
       <button>=</button>
     </div>
 
-    <script>
-      let e = document.getElementById("test");
-      console.log(e.value);
-    </script>
+    <div class="car">
+      <select class="type">
+        <option value="">선택하세요</option>
+        <option value="sedan">승용차(임지윤차)</option>
+        <option value="suv">SUV(정겨운차)</option>
+        <option value="truck">트럭(심예림차)</option>
+      </select>
+
+      <select class="type2">
+        <option>차 맞추기</option>
+        <option>쏘나타</option>
+        <option>더 뉴 아반테</option>
+        <option>디 올 뉴 그랜저</option>
+        <option>디 올 뉴 그랜저Hynird</option>
+      </select>
+    </div>
+
+    <div class="keyboard">
+      <input type="text" placeholder="입력한문자를 대문자로 바꾸기">
+    </div>
+
+    <div class="form">
+      <form action="http://localhost:8888/form">
+        <input type="text" name="t" value="t1"><br>
+        <input type="password" name="p" value="p1">
+        <button style="width: 55px;">전송</button>
+      </form>
+    </div>
+
+    <div class="link">
+      <a href="https://yerimee220.tistory.com/">프론트천재블로그</a>
+    </div>
+
   </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function test(obj){
+              //console.log(obj.innerHTML)
+              if(obj.innerHTML =='네이버'){
+                location.href = 'http://www.naver.com'
+              }else if(obj.innerHTML =='누르지마세요'){
+                alert('그렇게 누르지말라고 했는데 별 수 없군요.')
+                alert('방명록이나 남기세요')
+                location.href = 'https://yerimee220.tistory.com/guestbook'
+                
+            }
+        }
+
+            window.addEventListener('load', ()=>{
+                const btNaverObj = document.querySelector('button.naver')
+                const btTistoryObj = document.querySelector('button.tistory')
+
+                btNaverObj.addEventListener('click',  (e)=>{
+                    test(e.target);
+
+                })//클릭 이벤트 발생시 함수 호출
+                // btNaverObj.addEventListener('click', test()) //클릭 이벤트 발생전에도 그냥 바로 함수 호출
+                btTistoryObj.addEventListener('click', (e)=>{
+                    test(e.target);
+            })
+
+        })
+        </script>
+        
+    </head>
+    <body>
+        <button class="naver">네이버</button>
+        <button class="tistory">누르지마세요</button>
+    </body>
+</html>
